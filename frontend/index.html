@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TaskFlow | To-Do Manager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <header class="header">
+      <h1>TaskFlow</h1>
+      <p>Organize your work. Focus on what matters.</p>
+    </header>
+
+    <div class="card">
+      <div class="input-group">
+        <input id="taskInput" type="text" placeholder="What needs to be done?" />
+        <button onclick="addTask()">Add Task</button>
+      </div>
+
+      <ul id="taskList" class="task-list"></ul>
+    </div>
+  </div>
+
+  <!-- Edit Modal -->
+  <div id="editModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Edit Task</h2>
+      <input type="text" id="editInput" />
+      <div class="modal-actions">
+        <button class="cancel" onclick="closeModal()">Cancel</button>
+        <button class="save" onclick="saveEdit()">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
