@@ -66,11 +66,4 @@ Asma Shahzadi
 Full stack Developer | Web Developer
 LinkedIn: [[https://www.linkedin.com/in/yourprofile/](https://www.linkedin.com/in/yourprofile/)](https://www.linkedin.com/in/asma-shahzadi-313291376/)
 
----
 
-
-
-Thank you **Arch Technologies** for the assignment and opportunity.
-
-
-```
