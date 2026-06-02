@@ -1,4 +1,6 @@
-const API = "http://localhost:5000/tasks";
+// 🔴 IMPORTANT: yahan apna Render backend URL paste karo
+const API = "https://YOUR-RENDER-BACKEND-URL.onrender.com/tasks";
+
 let editIndex = null;
 
 // Load tasks on page load
@@ -20,7 +22,8 @@ function loadTasks() {
           </li>
         `;
       });
-    });
+    })
+    .catch(err => console.log("Error loading tasks:", err));
 }
 
 // Add task
@@ -41,7 +44,7 @@ function addTask() {
 // Delete task
 function deleteTask(index) {
   fetch(`${API}/${index}`, { method: "DELETE" })
-    .then(loadTasks);
+    .then(() => loadTasks());
 }
 
 // Open edit modal
